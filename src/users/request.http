@@ -1,0 +1,10 @@
+### Create new user
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "asdf@gh.com",
+    "password": "sdfsdfd",
+    "extrawhitelist": "not_responsible"
+}
