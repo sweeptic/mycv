@@ -1,8 +1,6 @@
 ### Create new user
-
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
-
 {
     "email": "asdf@gh.com",
     "password": "sdfsdfd",
@@ -11,7 +9,7 @@ Content-Type: application/json
 
 
 ### Find user
-GET http://localhost:3000/auth/121212
+GET http://localhost:3000/auth/3
 
 
 ### Find all users
