@@ -1,10 +1,21 @@
 ### Create new user
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
+
 {
-    "email": "asdf@gh.com",
+    "email": "asxcxcdf@gh.com",
     "password": "sdfsdfd",
     "extrawhitelist": "not_responsible"
+}
+
+
+### sign in user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "asxcxcdf@gh.com",
+    "password": "sdfsdfd"
 }
 
 
@@ -25,3 +36,37 @@ Content-Type: application/json
 {
     "email": "asdfffffffffffff@gh.com"
 }
+
+
+### set a color
+GET http://localhost:3000/auth/colors/green1
+
+### get a color
+GET http://localhost:3000/auth/colors
+
+
+
+### Create new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "12345"
+}
+
+### sign in user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "12345"
+}
+
+### who am i
+GET http://localhost:3000/auth/whoami
+
+
+### sign out
+POST http://localhost:3000/auth/signout
